@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    background: url(./background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+
+
+header{
+    
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #FFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba( 0, 0, 0, 0.2);
+}
+
+.logo{
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    
+    float: left;
+    font-weight: 700;
+    
+}
+nav{
+    float: right;
+}
+.clearfix{
+    clear: both;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #262626;
+}
+nav ul li a:active,
+nav ul li a:hover
+{
+    background: #069370;
+    color: #fff;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1200px)
+{
+header
+{
+    margin: 20px;
+
+}
+}
+@media screen and (max-width: 510px)
+{
+.menu-toggle
+{
+    margin: 20px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    background: #ccc;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: #069370;
+}
+.menu-toggle::before
+{
+    content: "\f0c9";
+    font-family: fontAwesome;
+    line-height: 40px;
+}
+.menu-toggle.active::before
+{
+    content: "\f00d";
+    
+}
+nav
+{
+    display: none;
+}
+nav.active
+{
+    display: block;
+    width: 100%;
+}
+nav.active ul
+{
+    display: block;
+}
+nav.active ul li a
+{
+    margin: 0;
+}
+}
+.icon {
+    margin-top: 15px;
+    margin-left: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+span::before{
+    content: "";
+    animation: animate infinite 5s;
+}
+@keyframes animate{
+    0%{
+        content: "Progremer";
+    }
+    40%{
+        content: "Developer";
+    }
+    60%{
+        content: "Freelancer";
+    }
+    90%{
+        content: "Designer";
+    }
+}
+
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    
+    }
+.wrapper h2{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 2px 0 rgba( 0, 0, 0, 0.5);
+    font-size: 60px;
+}    
+.wrapper p{
+    color: #FFF;
+    font-size: 25px;
+    margin: 0;
+    line-height: 35px;    
+}
+.wrapper a{
+    background: crimson;
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 30px;
+}
