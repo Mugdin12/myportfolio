@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
+    <link rel="icon" 
+      type="image/jpg" 
+      href="./172224320_968562827243676_7135748499584758251_n.jpg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Contact</title>
 </head>
@@ -82,16 +85,19 @@ $(document).ready(function(){
 >
 <h2>Pošalji Poruku</h2>
 <div class="inputBox">
-    <input type="text" name="" required="">
-    <span>Ime i prezime</span>
+    <label class="label" for="name"></label>
+    <input type="text" name="" required="" placeholder="Ime">
+    
 </div>
 <div class="inputBox">
-    <input type="text" name="" required="">
-    <span>Email</span>
+    <label class="label" for="email"></label>
+    <input type="text" name="" required="" placeholder="Email">
+    
 </div>
 <div class="inputBox">
-    <textarea required=""></textarea>
-    <span>Unesi poruku...</span>
+    <label class="label" for="name"></label>
+    <textarea required="" placeholder="Unesi poruku"></textarea>
+    
 </div>
 <div class="inputBox">
     <input type="submit" name="" value="Pošalji">
